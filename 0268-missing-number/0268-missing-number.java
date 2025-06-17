@@ -4,7 +4,7 @@ class Solution {
         int n = nums.length;
         int i = 0;
 
-        while(i < nums.length){
+        while(i < n){
             int correct = nums[i];
             if(correct < n && nums[i] != nums[correct]){
                 int temp = nums[i];
@@ -15,12 +15,12 @@ class Solution {
             }
         }
 
-        for(i = 0;i<nums.length;i++){
+        for(i = 0;i<n;i++){
             if(nums[i] != i){
                 return i;
             }
         }
 
-        return nums.length;
+        return n;
     }
 }
